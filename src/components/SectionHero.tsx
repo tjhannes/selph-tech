@@ -17,6 +17,7 @@ export default function SectionHero() {
         strings={[
           "Wir entwickeln Apps",
           "Wir entwickeln Web Anwendungen",
+          "Wir entwickeln Webseiten",
           "Wir entwickeln Software",
         ]}
         typeSpeed={40}

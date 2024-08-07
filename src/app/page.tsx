@@ -1,15 +1,16 @@
-import SectionContact from "@/components/SectionContact";
 import SectionFooter from "@/components/SectionFooter";
 import SectionHero from "@/components/SectionHero";
 import SectionPortfolio from "@/components/SectionPortfolio";
-import Image from "next/image";
+import { Competences } from "@/components/competences";
+import { ContactForm } from "@/components/contact-form";
 
 export default function Home() {
   return (
     <main>
       <SectionHero />
       <SectionPortfolio />
-      <SectionContact />
+      <Competences />
+      <ContactForm />
       <SectionFooter />
     </main>
   );
