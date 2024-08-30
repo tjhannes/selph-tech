@@ -3,7 +3,7 @@ export function Competences() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold text-center">Kompetenzen</h2>
 
-      <div className="mt-8 grid grid-cols-2 gap-8">
+      <div className="mt-8 grid grid-cols-2 gap-8 dark:text-white">
         <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-white hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors cursor-pointer">
           <CodeIcon className="h-12 w-12" />
           <div className="my-3 text-xl text-center">Software Entwicklung</div>

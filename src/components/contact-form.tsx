@@ -12,7 +12,16 @@ export function ContactForm() {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
 
-    formData.append("access_key", "6e6c846d-115e-4068-ae55-168ecf00a7a9");
+    if (
+      formData.get("name") === "" ||
+      formData.get("email") === "" ||
+      formData.get("message") === ""
+    ) {
+      toast.error("Bitte füllen Sie alle Felder aus");
+      return;
+    }
+
+    formData.append("access_key", process.env.NEXT_PUBLIC_EMAIL_KEY as string);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
