@@ -21,7 +21,10 @@ export function ContactForm() {
       return;
     }
 
-    formData.append("access_key", process.env.NEXT_PUBLIC_EMAIL_KEY as string);
+    formData.append(
+      "access_key",
+      "6e6c846d-115e-4068-ae55-168ecf00a7a9" as string
+    );
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
